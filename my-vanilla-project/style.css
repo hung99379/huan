@@ -1,0 +1,260 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0px auto;
+    margin: 0px auto;
+    font-size: 15px;
+    font-family: Inter;
+    font-style: normal;
+}
+
+.menu-left {
+    width: 20%;
+    max-height: 1150px;
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+
+.menu-left hr {
+    border: none;
+    border-top: 3px solid #ccc;
+    margin: 10px 0px;
+}
+
+.menu-left-avata img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.menu-left-icon ul li {
+    margin: 20px auto;
+}
+
+.menu-left-icon ul a {
+    padding: 7px 9px;
+    border-radius: 50%;
+    background-color: #F0F0F6;
+}
+
+.menu-left-icon ul a:hover {
+    background-color: #FFB400;
+    padding: 7px 9px;
+    border-radius: 50%;
+}
+
+.menu-left-myInfo tr {
+    height: 40px;
+}
+
+.menu-left-myInfo td:nth-child(1) {
+    float: left;
+    background-color: #FFB400;
+}
+
+.menu-left-myInfo td:nth-child(2) {
+    float: right;
+}
+
+.menu-left-languages tr {
+    height: 40px;
+    color: var(--Paragraph-Font, #767676);
+    border-bottom: 3px solid #FFB400;
+}
+
+.menu-left-languages td:nth-child(1) {
+    float: left;
+    padding-top: 10px;
+}
+
+.menu-left-languages td:nth-child(2) {
+    float: right;
+    padding-top: 10px;
+}
+
+.menu-left-download {
+    width: 100%;
+    background-color: #ffb300;
+    padding: 10px 0;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.menu-left-download input {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+
+
+.main {
+    width: 73%;
+    margin: 0 40px;
+}
+
+.main-banner {
+    background-color: white;
+    width: 100%;
+    height: 450px;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+}
+
+.main-banner-left {
+    width: 60%;
+    float: left;
+}
+
+.main-banner-right {
+    width: 38%;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.main-banner-left-arrow {
+    width: 130px;
+    background-color: #ffb300;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    float: left;
+}
+
+.main-banner-left-arrow input {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.main-portfolio nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-portfolio nav li {
+    margin-right: 20px;
+}
+
+.main-portfolio nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Hover effect for the links */
+.main-portfolio nav a:hover {
+    color: #FFB400;
+}
+.main-portfolio-item{
+    max-height: 325px;
+}
+.main-portfolio-item img{
+    height: 325px;
+}
+.main-portfolio-item {
+    position: relative;
+    background-size: cover; /* Điều chỉnh nếu cần thiết */
+}
+
+.file-label {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+    opacity: 0; /* Ẩn ban đầu */
+    transition: opacity 0.3s ease; /* Hiệu ứng chuyển động mượt mà khi di chuột qua */
+}
+
+.file-label:hover {
+    opacity: 1; /* Hiện khi di chuột qua */
+}
+
+/* Hiệu ứng khi di chuột qua */
+.main-portfolio-item:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--Vang-2, rgba(255, 180, 0, 0.9));
+    opacity: 1;
+    transition: opacity 0.3s ease; /* Hiệu ứng chuyển động mượt mà khi di chuột qua */
+}
+.main-info td {
+    margin-top: 10px;
+}
+
+.main-info td:nth-child(1) {
+    float: left;
+}
+
+.main-info td:nth-child(2) {
+    float: right;
+}
+
+
+
+.menu-right {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    right: 0; /* Đặt right: 0 để menu "ghim" ở bên phải */
+    width: 5%;
+    max-height: 700px;
+    background-color: white;
+    padding: 20px;
+    border-left: 1px solid #ddd;
+  }
+  
+  .menu-right-icon-contrast {
+    margin: 80px 0 150px 0;
+  }
+  
+  .menu-right-icon-contrast a {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #F0F0F6;
+  }
+  
+  .menu-right-icon-contrast a:hover {
+    background-color: #FFB400;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  .menu-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-right ul li {
+    margin: 40px 0;
+  }
+  
+  .menu-right ul a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 7px 9px;
+    border-radius: 50%;
+    background-color: #F0F0F6;
+  }
+  
+  .menu-right ul a:hover {
+    background-color: #FFB400;
+    padding: 7px 9px;
+    border-radius: 50%;
+  }
